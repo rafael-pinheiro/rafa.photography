@@ -6,7 +6,6 @@ const config: Config.InitialOptions = {
   moduleNameMapper: {
     "^.+\\.(css|less|scss)$": "babel-jest"
   },
-  automock: true,
   coverageThreshold: {
     global: {
       branches: 90,
