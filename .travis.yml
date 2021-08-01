@@ -5,6 +5,7 @@ script:
   - cd website
   - npm ci
   - npm run build
+  - touch out/.nojekyll
 deploy:
   fqdn: rafa.photography
   provider: pages
