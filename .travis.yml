@@ -3,6 +3,7 @@ node_js:
   - node
 script:
   - cd website
+  - npm ci
   - npm run build
 deploy:
   fqdn: rafa.photography
