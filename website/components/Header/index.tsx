@@ -8,7 +8,7 @@ export default function Header() {
 
   return (
     <div className={`${styles.header} ${open && 'open'}`}>
-      <h1>Rafael</h1>
+      <h1>Rafa</h1>
       <Menu />
       <MenuButton onClick={() => setOpen(!open)} />
     </div>
