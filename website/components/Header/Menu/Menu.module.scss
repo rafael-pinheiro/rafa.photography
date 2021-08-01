@@ -1,0 +1,42 @@
+.menu {
+  @apply flex flex-col items-center absolute inset-0 text-white pt-16 transform -translate-y-full transition duration-1000 ease-in-out;
+  background-color: #151515;
+
+  .link {
+    @apply flex flex-col w-44 mb-10;
+
+    .label {
+      @apply relative uppercase text-2xl font-bold mb-3 transition-all duration-300 ease-in-out;
+
+      &::before {
+        @apply block absolute left-0 top-1/2 w-0 h-0.5 transition duration-300 ease-in-out;
+        content: ' ';
+        background-color: #df1f29;
+        transition-property: width;
+      }
+    }
+
+    .subtitle {
+      color: #555;
+    }
+
+    &:hover {
+      .label {
+        @apply pl-12;
+        color: #df1f29;
+
+        &::before {
+          @apply w-10;
+        }
+      }
+
+      .subtitle {
+        color: #9a9a9a;
+      }
+    }
+  }
+}
+
+:global(.open) .menu {
+  @apply -translate-y-0;
+}

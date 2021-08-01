@@ -1,0 +1,48 @@
+.button {
+  @apply flex z-50;
+
+  .label {
+    @apply uppercase text-white text-center text-sm mr-6;
+  }
+
+  .hamburguer {
+    @apply relative block h-full;
+    width: 30px;
+
+    .line {
+      @apply absolute block left-0 w-full bg-white transition delay-500 ease-in-out;
+      height: 3px;
+
+      &:nth-child(1) {
+        @apply duration-300 top-0;
+      }
+
+      &:nth-child(2) {
+        top: 8px;
+        left: -6px;
+      }
+
+      &:nth-child(3) {
+        @apply duration-300;
+        top: 16px;
+      }
+    }
+  }
+}
+
+:global(.open) .button .hamburguer .line {
+  &:nth-child(1) {
+    @apply transform-gpu rotate-45 translate-y-1;
+    transition-delay: 0s;
+  }
+
+  &:nth-child(2) {
+    @apply opacity-0;
+    transition-delay: 0s;
+  }
+
+  &:nth-child(3) {
+    @apply transform-gpu -rotate-45 -translate-y-3;
+    transition-delay: 0s;
+  }
+}
