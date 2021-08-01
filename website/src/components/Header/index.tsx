@@ -7,10 +7,10 @@ export default function Header() {
   const [ open , setOpen ] = useState(false);
 
   return (
-    <div className={`${styles.header} ${open && 'open'}`}>
+    <div className={`${styles.header} ${open ? 'open' : ''}`}>
       <h1>Rafa</h1>
       <Menu />
-      <MenuButton onClick={() => setOpen(!open)} />
+      <MenuButton onClick={() => setOpen(!open) } />
     </div>
   );
 }

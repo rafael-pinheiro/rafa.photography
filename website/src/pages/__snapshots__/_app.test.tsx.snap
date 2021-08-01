@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  <div
+    className="undefined "
+  >
+    <h1>
+      Rafa
+    </h1>
+    <nav>
+      <a
+        href="/"
+      >
+        <span>
+          Home
+        </span>
+        <small>
+          Back to homepage
+        </small>
+      </a>
+      <a
+        href="/"
+      >
+        <span>
+          About
+        </span>
+        <small>
+          Learn more about the author
+        </small>
+      </a>
+      <a
+        href="/"
+      >
+        <span>
+          Contact
+        </span>
+        <small>
+          Get in touch
+        </small>
+      </a>
+    </nav>
+    <button
+      onClick={[Function]}
+    >
+      <span>
+        menu
+      </span>
+      <span>
+        <span />
+        <span />
+        <span />
+      </span>
+    </button>
+  </div>,
+  <div
+    prop1="test"
+    prop2="also test"
+  />,
+]
+`;

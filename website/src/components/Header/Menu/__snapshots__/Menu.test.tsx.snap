@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<nav>
+  <a
+    href="/"
+  >
+    <span>
+      Home
+    </span>
+    <small>
+      Back to homepage
+    </small>
+  </a>
+  <a
+    href="/"
+  >
+    <span>
+      About
+    </span>
+    <small>
+      Learn more about the author
+    </small>
+  </a>
+  <a
+    href="/"
+  >
+    <span>
+      Contact
+    </span>
+    <small>
+      Get in touch
+    </small>
+  </a>
+</nav>
+`;
