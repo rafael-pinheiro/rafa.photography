@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - node
+script:
+  - cd website
+  - npm run build
+deploy:
+  fqdn: rafa.photography
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  on:
+    branch: deploy
