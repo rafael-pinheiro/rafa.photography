@@ -11,5 +11,7 @@ deploy:
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   keep_history: true
+  local_dir: website/out
+  target_branch: deploy
   on:
-    branch: deploy
+    branch: master
