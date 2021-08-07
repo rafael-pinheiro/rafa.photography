@@ -1,5 +1,8 @@
 {
   "title": "Street Photography",
   "description": "Cool street *shotz!*",
-  "media": "https://res.cloudinary.com/rafa-photography/image/upload/v1628344845/romance_in_the_rain_b64mh9.jpg"
+  "media": [
+    "https://res.cloudinary.com/rafa-photography/image/upload/v1628344755/coffee_at_the_park_vh1ppb.jpg",
+    "https://res.cloudinary.com/rafa-photography/image/upload/v1628344845/romance_in_the_rain_b64mh9.jpg"
+  ]
 }
